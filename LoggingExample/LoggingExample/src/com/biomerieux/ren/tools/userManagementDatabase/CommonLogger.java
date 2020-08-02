@@ -21,6 +21,7 @@ public class CommonLogger extends Logger {
 		 * work around. Manually set the parent of this second, or third, etc, instance of a logger, to the
 		 * root logger.
 		 */
+		 //first logger with all the parameters
 		boolean isFirstInstanceWithGivenName = LogManager.getLogManager().addLogger(this);
 		if (isFirstInstanceWithGivenName == false) {
 			Logger root = getLogger("");
